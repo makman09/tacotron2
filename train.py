@@ -5,16 +5,16 @@ import math
 from numpy import finfo
 
 import torch
-from distributed import apply_gradient_allreduce
+from app.tacotron2.distributed import apply_gradient_allreduce
 import torch.distributed as dist
 from torch.utils.data.distributed import DistributedSampler
 from torch.utils.data import DataLoader
 
-from model import Tacotron2
-from data_utils import TextMelLoader, TextMelCollate
-from loss_function import Tacotron2Loss
-from logger import Tacotron2Logger
-from hparams import create_hparams
+from app.tacotron2.model import Tacotron2
+from app.tacotron2.data_utils import TextMelLoader, TextMelCollate
+from app.tacotron2.loss_function import Tacotron2Loss
+from app.tacotron2.logger import Tacotron2Logger
+from app.tacotron2.hparams import create_hparams
 
 
 def reduce_tensor(tensor, n_gpus):
