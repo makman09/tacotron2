@@ -13,3 +13,4 @@ pillow
 Unidecode==1.0.22
 numba==0.48
 tensorboard
+tensorboardX==1.8
