@@ -7,6 +7,3 @@ unicode==2.7
 pillow
 Unidecode==1.0.22
 numba==0.48
-tensorflow
-tensorboard
-tensorboardX==1.8
